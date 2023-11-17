@@ -1,0 +1,7 @@
+;input control and options file for orbit8                                                
+; 1. input file names                                                                     
+inplan='pvenexx.inc'; input file name for initial conditions of the planets                
+ibar= 1; barycentric correction 1=yes 0=no                                                
+inbar='barmerxx.inc'; file containing the barycentric correction                          
+inast='allnum.cat'; input file name for initial conditions of the asteroids               
+; 2. job description: ast. are ordered in two list, with and without LCE
