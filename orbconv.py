@@ -25,7 +25,7 @@ for el in asteroids:
     output.append(el)
    
 if(yark):
-    options[-2] = "iyark=0; Yarkovsky effect as secular drift in a 0=no 3=yes 1,2=not in use"
+    options[-2] = "iyark=3; Yarkovsky effect as secular drift in a 0=no 3=yes 1,2=not in use"
     with open("yarkovsky.dat", "w") as f:
         f.write(f'{len(asteroids)} {yark_roc}')
     call(["mv", "yarkovsky.dat", orbit_path])
