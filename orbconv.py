@@ -5,6 +5,7 @@ import os
 base_path = "/home/wooyeah/Documents/DSS"
 orbit_path = base_path + "/orbit9"
 conv_path = base_path + "/conv9"
+output_path = base_path + "/4"
 yark = False
 yark_roc = 0.001
 asteroids = ("20215", "661346", "15543", "11111", "55555", "12576")
@@ -45,3 +46,7 @@ call(["mv", orbit_path + "/vast.fil", conv_path])
 call(["mv", orbit_path + "/vpla.fil", conv_path])
 os.chdir(conv_path)
 call([conv_path + "/conv9<conv9.inp"], shell = True)
+
+for el in asteroids:
+    call(["mv", output_path, f"v{el}.fil"])
+
